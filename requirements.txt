@@ -1,0 +1,16 @@
+# torch is already provided by your ComfyUI install - don't add it here.
+
+# Qwen3-VL needs a recent transformers; the Gemma 4 presets need >= 5.5.0
+# (Gemma4ForConditionalGeneration). The original suite pins >= 5.5.0.
+transformers>=5.5.0
+accelerate>=0.27.0
+huggingface_hub>=0.20.0
+pillow>=10.0.0
+numpy>=1.24.0
+sentencepiece>=0.1.99
+
+# Only needed by the "Caption Folder" node (reads video files from disk)
+opencv-python-headless>=4.8.0
+
+# Only needed for the gemma-4-26b-a4b-int4 preset
+torchao>=0.17.0
